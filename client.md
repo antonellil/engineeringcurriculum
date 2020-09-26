@@ -58,4 +58,4 @@ selfieButton.addEventListener('onclick', () => {
 });
 ```
 
-If you refresh your page in Google Chrome and press the button, you should see an alert message pop up. You can close the alert and click the button and see it again.
+This listener will call the function and pop up an alert when it is clicked. If you refresh your page in Google Chrome and press the button, you should see an alert message pop up. You can close the alert and click the button and see it again.
