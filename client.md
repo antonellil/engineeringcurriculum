@@ -40,3 +40,5 @@ Next, lets change the color of that `div`. Create a class (which is what CSS use
 In your `index.html`, add that class to your selfies `div` by doing `<div class="header">Selfies</div>`.
 
 If you refresh your Google Chrome you'll see that the color hasn't changed yet. That is because we haven't told the `index.html` file that it needs to use the `index.css` file. To do that, add a link to that file in the `head` tag of your `index.html` by following https://www.w3schools.com/tags/tag_link.asp. The `head` tag goes right above the `body` tag and closes itself before the `body` starts.
+
+Next, lets add our first interaction to the page using JavaScript. We need to link our `index.js` to our `index.html`. To do that, add a tag `<script src="index.js"></script>` right before you close the `</body`. This tells the `index.html` page to load your `index.js` javascript file.
