@@ -45,7 +45,7 @@ Next, lets add our first interaction to the page using JavaScript. We need to li
 
 Let's add a `button` element after your Selfies `div` like `<button>Take a selfie</button>`. Then let's make your JavaScript do something when the button is pressed. In your `index.js` file, you can tell it to find the `button` you just added in the html. First add an `id` attribute to your button and like `<button id="butts">Take a selfie</button>`. The `id` attribute is an attribute that is used to uniquely identify elements on the page.
 
-In your `index.js` file you can create a variable that stores the button that we can use. Try adding the below to your `index.js` file:
+In your `index.js` file you can create a variable that stores the button that we can use. We will use `const` which is the standard way to create a variable in `JavaScript` that can't be overwritten in the future (it is "constant"). It is best to use `const` when creating variables so that you don't accidentally overwrite things that won't be overwritte. There is also `let` for variables that will change. Lets try adding the below to your `index.js` file:
 ```
 const selfieButton = document.getElementById('butts');
 ```
