@@ -1,15 +1,31 @@
 Welcome to the software engineering curriculum!
 
+To start create a git account on https://www.github.com and download this curriculum to your computer. This can be done by:
+
+1. Opening Terminal
+2. Navigating to the folder you want to put this in by using the `cd` command
+3. Typing `git checkout https://github.com/antonellil/engineeringcurriculum.git` and hitting enter to download
+
+Next, install the following:
+
+- Sublime Text 3 https://www.sublimetext.com/3
+
+- Google Chrome https://www.google.com/chrome/
+
 # 1) Computer overview
 
 ## Terminal and local fileystem navigation
 
 - Terminal is just another way to interact with the computer and view files and run programs
-- cd, ls for navigating and viewing files, mkdir for creating folders
+  - cd, ls for navigating and viewing files
+  - mkdir for creating folders, touch for making new empty files
+  - rm to remove a file or directory
+  - mv to move a file or directory
 
 ## Git
 
-- git is a way to save your local files in the cloud and look at history changes to those files
+- git is a way to save your local files in the cloud
+- it allows you to look at the history changes to those files and share with others
 
 # 2) Sublime editor overview
 
