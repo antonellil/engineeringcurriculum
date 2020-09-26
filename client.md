@@ -103,18 +103,22 @@ const photo = document.getElementById('photo');
 Now we need to add another function to tell the JavaScript how to take a picture. This function will take a frame from the `video` element, write it to the `canvas` element, and then save a picture and display it in the `img` element. You can add this function to your `index.js` file like:
 ```
 function takepicture() {
+  // 1) this creates a new blank slate for us in the 2D space (pictures)
   const context = canvas.getContext('2d');
 
+  // 2) set a width and height for the canvas
   canvas.width = 400;
   canvas.height = 400;
 
+  // 3) draw an image on the blank slate using the video stream
   context.drawImage(video, 0, 0, width, height);
 
-      var data = canvas.toDataURL('image/png');
-      photo.setAttribute('src', data);
-    } else {
-      clearphoto();
-    }
-  }
+  // 4) create a png (image) data url
+  const data = canvas.toDataURL('image/png');
+
+  // 5) set the source attribute on the photo element to image data url
+  photo.setAttribute('src', data);
+}
 ```
+This function will be used to take a picture and show it in our `photo` element in our html.
 
