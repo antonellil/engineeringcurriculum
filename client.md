@@ -43,4 +43,4 @@ If you refresh your Google Chrome you'll see that the color hasn't changed yet. 
 
 Next, lets add our first interaction to the page using JavaScript. We need to link our `index.js` to our `index.html`. To do that, add a tag `<script src="index.js"></script>` right before you close the `</body`. This tells the `index.html` page to load your `index.js` javascript file.
 
-Let's add a `button` element after your Selfies `div` like `<button>Take a selfie</button>`
+Let's add a `button` element after your Selfies `div` like `<button>Take a selfie</button>`. Then let's make your javascript do something when the button is pressed. In your `index.js` file, you can tell it to find the `button` you just added in the html. Add an `id` attribute to your button and like `<button id="butts">Take a selfie</button>`. `id` is an attribute that is used to uniquely identify elements on the page.
