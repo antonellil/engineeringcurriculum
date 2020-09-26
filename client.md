@@ -28,4 +28,4 @@ Every website has a standard format for HTML that all browsers can read. Read an
 
 There are many HTML elements, but practically only the `div` element is needed and used as the main building block for websites. Delete the contents of the `body` tag in your `index.html` and add a new empty `div` element in your `body` like `<div>Selfies</div>`.
 
-Open your `index.html` file in Google Chrome.
+Open your `index.html` file in Google Chrome by going to `Chrome -> File -> Open File`.
