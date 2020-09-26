@@ -11,7 +11,7 @@ Next, install the following:
 - Sublime Text 3 (a nice text editor) https://www.sublimetext.com/3
 - Google Chrome (a modern web browser) https://www.google.com/chrome/
 
-# 1) Your computer
+## 1) Your computer
 
 ### Terminal and local fileystem navigation
 
@@ -39,7 +39,7 @@ You will be using these commands throughout the curriculum and can reference the
 
 Throughout the curriculum you will be using Terminal and Sublime Text 3 to write your code.
 
-# 3) Front-end/back-end, client/server, what are those?!
+## 3) Front-end/back-end, client/server, what are those?!
 
 - Client is what homo sapiens interact with when they use websites and apps
   - The client is typically either a web browser, iOS app, Android app, Windows app, or Mac app.
@@ -47,7 +47,7 @@ Throughout the curriculum you will be using Terminal and Sublime Text 3 to write
   - Server is just a computer somewhere that the client talks to
   - Server often uses a database to store things long-term
 
-# 4) Client
+## 4) Client
 
 - There are many ways to code the client, but the current way its often done is primarily in JavaScript because thats what the web browser uses
 - The role of the client is to display things to the user and take user input
@@ -61,7 +61,7 @@ Now we'll jump right into creating some fun websites.
 
 View `https://www.github.com/antonellil/engineeringcurriculum/client.md` to get started.
 
-# 5) Server
+## 5) Server
 
 - There are many ways to code the server, for the purposes of this tutorial we'll be using JavaScript so that the language is the same on the front-end and backend. NodeJS is a server-side language that uses JavaScript.
 - The role of the server is to act as a web server that talks to clients, or to perform processing and tasks and not talk to clients
@@ -70,18 +70,18 @@ Now we'll jump right into creating some fun servers.
 
 View `https://www.github.com/antonellil/engineeringcurriculum/server.md` to get started.
 
-# 6) Database
+## 6) Database
 
 - PostgreSQL overview and tutorials
 - Role of the database (storage, retrieval)
 - Building practical database tables and usage
 
-# 7) Caching
+## 7) Caching
 
 - Redis overview and tutorials
 - Role of caching (often-accessed values, limiting database reads)
 - Building practical things with caching
 
-# 8) End-to-end
+## 8) End-to-end
 
 - Build several applications end-to-end through all layers of the stack
