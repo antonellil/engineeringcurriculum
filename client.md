@@ -96,6 +96,25 @@ Lets go back to the JavaScript in your `index.js` file and add two more variable
 ```
 const selfieButton = document.getElementById('butts');
 const canvas = document.getElementById('canvas');
+const video = document.getElementById('video');
 const photo = document.getElementById('photo');
+```
+
+Now we need to add another function to tell the JavaScript how to take a picture. This function will take a frame from the `video` element, write it to the `canvas` element, and then save a picture and display it in the `img` element. You can add this function to your `index.js` file like:
+```
+function takepicture() {
+  const context = canvas.getContext('2d');
+
+  canvas.width = 400;
+  canvas.height = 400;
+
+  context.drawImage(video, 0, 0, width, height);
+
+      var data = canvas.toDataURL('image/png');
+      photo.setAttribute('src', data);
+    } else {
+      clearphoto();
+    }
+  }
 ```
 
