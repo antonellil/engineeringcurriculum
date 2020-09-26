@@ -51,13 +51,15 @@ const selfieButton = document.getElementById('butts');
 ```
 This will create a `selfieButton` variable from the element with your `id='butts'`.
 
-Now we can tell the `selfieButton` to do something when it is clicked. This is done by adding what JavaScript calls "listeners" which are functions that get called when certain "events" happen to elements in the html. There is an event called `onclick` that we can use to tell the button to do something when a click happens to it. You can add a listener to the button with
+Now we can tell the `selfieButton` to do something when it is clicked. This is done by adding what JavaScript calls "listeners" which are functions that get called when certain "events" happen to elements in the html. There is an event called `click` that we can use to tell the button to do something when a click happens to it. You can add a listener to the button with
 ```
 const selfieButton = document.getElementById('butts');
 
-selfieButton.addEventListener('onclick', () => {
+selfieButton.addEventListener('click', () => {
   alert('I was smashed');
 });
 ```
 
 This listener will call the function and pop up an alert when it is clicked. If you refresh your page in Google Chrome and press the button, you should see an alert message pop up. You can close the alert and click the button and see it again.
+
+Now, lets access the camera from the browser. Add a `video` element to your html that we will use to display your camera. You can add it to `index.html` like `<video id="video">Video stream not available yet.</video>`
