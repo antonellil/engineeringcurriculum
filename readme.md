@@ -1,16 +1,15 @@
-Welcome to the software engineering curriculum!
+# Welcome to the software engineering curriculum!
 
-To start create a git account on https://www.github.com and download this curriculum to your computer. This can be done by:
+To start create a git account on https://www.github.com. Next, you can download this curriculum to your computer by:
 
 1. Opening Terminal
-2. Navigating to the folder you want to put this in by using the `cd` command
+2. Navigating to the folder you want to use for the curriculum by using the `cd` command
 3. Typing `git checkout https://github.com/antonellil/engineeringcurriculum.git` and hitting enter to download
 
 Next, install the following:
 
-- Sublime Text 3 https://www.sublimetext.com/3
-
-- Google Chrome https://www.google.com/chrome/
+- Sublime Text 3 (a nice text editor) https://www.sublimetext.com/3
+- Google Chrome (a modern web browser) https://www.google.com/chrome/
 
 # 1) Computer overview
 
