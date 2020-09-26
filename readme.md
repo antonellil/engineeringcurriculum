@@ -1,10 +1,10 @@
 # Welcome to the software engineering curriculum!
 
-To start create an account on https://www.github.com. Next, you can download this curriculum to your computer by:
+To start, create an account on https://www.github.com. Next, you can download this curriculum to your computer by:
 
 1. Opening Terminal
-2. Navigating to the folder you want to use for the curriculum by using the `cd` command
-3. Typing `git clone https://github.com/antonellil/engineeringcurriculum.git` and hitting enter to download
+2. Navigating to the folder you want to use for the curriculum, this is usually the Documents folder. You can use the `cd` command to navigate to Documents right after opening Terminal by typing `cd Documents` and pressing enter.
+3. Once you are in the folder, type `git clone https://github.com/antonellil/engineeringcurriculum.git` and hit enter to download.
 
 Next, install the following:
 
@@ -16,10 +16,10 @@ Next, install the following:
 ### Terminal and local fileystem navigation
 
 - Terminal is just another way to interact with the computer and view files and run programs
-  - `cd` is used for moving through folders. you can type `cd FolderName` to go into a folder named "FolderName" and you can use `cd ..` to move up a level
+  - `cd` is used for moving through folders. You can type `cd FolderName` to go into a folder named "FolderName" and you can use `cd ..` to move up a level
   - `ls` is used for viewing the files in the current folder
-  - `mkdir` is used for creating folders
-  - `touch` is used for making new empty files
+  - `mkdir` is used for creating folders. Example `mkdir hello` creates a new folder named hello.
+  - `touch` is used for making new empty files. Example `touch hello.txt` creates a new empty text file named hello.txt.
   - `rm` is used for removing a file or directory
 
 You will be using these commands throughout the curriculum and can reference them here as you go.
@@ -28,7 +28,6 @@ You will be using these commands throughout the curriculum and can reference the
 
 - git is a way to save your local files in the cloud
 - it allows you to look at the history changes to those files and share with others
-- there are commands you can use in Terminal to add files that you change to git
 
 ### Sublime Text 3
 
@@ -36,14 +35,15 @@ You will be using these commands throughout the curriculum and can reference the
 - It has plugins you can install that help with development
   - Color-coding of syntax that makes reading and writing code easier
   - It shows warnings and errors for syntax and some coding logic
+  - Fun themes that are easier on the eyes
 
 Throughout the curriculum you will be using Terminal and Sublime Text 3 to write your code.
 
 ## 3) Front-end/back-end, client/server, what are those?!
 
-- Client is what homo sapiens interact with when they use websites and apps
+- Client is what humans interact with when they use websites and apps
   - The client is typically either a web browser, iOS app, Android app, Windows app, or Mac app.
-- Server is what the client app talks to in order to send data and retrieve data
+- Server is what the client apps talk to in order to send data and retrieve data
   - Server is just a computer somewhere that the client talks to
   - Server often uses a database to store things long-term
 
@@ -52,10 +52,10 @@ Throughout the curriculum you will be using Terminal and Sublime Text 3 to write
 - There are many ways to code the client, but the current way its often done is primarily in JavaScript because thats what the web browser uses
 - The role of the client is to display things to the user and take user input
   - In the web browser, HTML and CSS are used for layout and display
-  - On iOS/Android/Windows/Mac, there are has similar layout and styling concepts to HTML and CSS
-  - JavaScript is used for user input
+    - On iOS/Android/Windows/Mac, there are similar layout and display concepts to HTML and CSS
+  - In the web browser, JavaScript is used for user input
 
-For the purpose of this curriculum and given its popularity, we will be focusing only on writing code in JavaScript.
+For the purpose of this curriculum and given its popularity, we will be focus only on writing code in JavaScript.
 
 Now we'll jump right into creating some fun websites.
 
