@@ -53,6 +53,8 @@ This will create a `selfieButton` variable from the element with your `id='butts
 
 Now we can tell the `selfieButton` to do something when it is clicked. This is done by adding what JavaScript calls "listeners" which are functions that get called when certain "events" happen to elements in the html. There is an event called `onclick` that we can use to tell the button to do something when a click happens to it. You can add a listener to the button with
 ```
+const selfieButton = document.getElementById('butts');
+
 selfieButton.addEventListener('onclick', () => {
   alert('I was smashed');
 });
