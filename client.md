@@ -63,3 +63,25 @@ selfieButton.addEventListener('click', () => {
 This listener will call the function and pop up an alert when it is clicked. If you refresh your page in Google Chrome and press the button, you should see an alert message pop up. You can close the alert and click the button and see it again.
 
 Now, lets access the camera from the browser. Add a `video` element to your html that we will use to display your camera. You can add it to `index.html` like `<video id="video">Video stream not available yet.</video>`
+
+In order to access the camera, we will have to ask the browser if we can use it and the user will have to confirm that. Add a new function to the top of your `index.js` that we will use to request access. The function will be:
+```
+async function openCamera() {
+  const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+
+  const video = document.getElementById('video');
+
+  video.srcObject = stream;
+  video.play();
+}
+```
+
+What this function is doing is asking the browser to access the user media (the camera, and also potentially the microphone) and then displaying that camera in the `video` element that we added before. We should also make the video a certain size by adding some styling to `index.css` for it:
+```
+#video {
+  width: 400px;
+  height: 400px;
+}
+```
+
+Now we need to tell the button to call the `openCamera` function when its clicked. To do that, change your listener to remove the `alert` line and change it to `openCamera()` which will call the `openCamera` function that we added. The `()` parentheses after the function tell the JavaScript that we want to run the function, and pass in no arguments to it since the function doesn't take any arguments.
