@@ -94,8 +94,7 @@ Next lets add a `canvas` element that we will use to manipulate the `video` stre
 
 Lets go back to the JavaScript in your `index.js` file and add two more variables for these `canvas` and `photo` elements we just added to the HTML. You can add these new variables below your `selfieButton` variable like:
 ```
-...
-const selfieButton ...;
+const selfieButton = document.getElementById('butts');
 const canvas = document.getElementById('canvas');
 const photo = document.getElementById('photo');
 ```
