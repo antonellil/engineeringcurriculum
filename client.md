@@ -85,3 +85,10 @@ What this function is doing is asking the browser to access the user media (the 
 ```
 
 Now we need to tell the button to call the `openCamera` function when its clicked. To do that, change your listener to remove the `alert` line and change it to `openCamera()` which will call the `openCamera` function that we added. The `()` parentheses after the function tell the JavaScript that we want to run the function, and pass in no arguments to it since the function doesn't take any arguments.
+
+Next lets add a `canvas` element that we will use to manipulate the `video` stream and create a picture, and also an `img` element that will display the selfie we just took. You can add these elements to your `index.html` like:
+```
+<canvas id="canvas" />
+<img id="photo" />
+```
+
