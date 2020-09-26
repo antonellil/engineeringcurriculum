@@ -64,7 +64,7 @@ This listener will call the function and pop up an alert when it is clicked. If 
 
 Now, lets access the camera from the browser. Add a `video` element to your html that we will use to display your camera. You can add it to `index.html` like `<video id="video">Video stream not available yet.</video>`
 
-In order to access the camera, we will have to ask the browser if we can use it and the user will have to confirm that. Add a new function to the top of your `index.js` that we will use to request access. The function will be an `async` function (which means that it needs to wait for the user to provide its "okay" to use the camera before proceeding) and `await` for the user input to say "okay you can use the camera":
+In order to access the camera, we will have to ask the browser if we can use it and the user will have to confirm that. Add a new function to the top of your `index.js` that we will use to request access. The function will be an `async` function (which means that it needs to wait for the user to provide its "okay" to use the camera before proceeding) and `await` for the user input to say "okay you can use the camera". The `navigator` is a built-in thing in browsers that give access to its functionalities. Try adding the below function to use the camera now:
 ```
 async function openCamera() {
   const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
