@@ -1,9 +1,14 @@
-Program overview:
+Welcome to the software engineering curriculum!
 
-# 1) Terminal, local fileystem navigation, and git overview
+# 1) Computer overview
+
+## Terminal and local fileystem navigation
 
 - Terminal is just another way to interact with the computer and view files and run programs
 - cd, ls for navigating and viewing files, mkdir for creating folders
+
+## Git
+
 - git is a way to save your local files in the cloud and look at history changes to those files
 
 # 2) Sublime editor overview
