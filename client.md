@@ -102,7 +102,7 @@ const photo = document.getElementById('photo');
 
 Now we need to add another function to tell the JavaScript how to take a picture. This function will take a frame from the `video` element, write it to the `canvas` element, and then save a picture and display it in the `img` element. You can add this function to your `index.js` file like:
 ```
-function takepicture() {
+function takePicture() {
   // 1) this creates a new blank slate for us in the 2D space (pictures)
   const context = canvas.getContext('2d');
 
@@ -122,3 +122,19 @@ function takepicture() {
 ```
 This function will be used to take a picture and show it in our `photo` element in our html.
 
+Finally we need to tell our button to take a picture if we have already started the video. Lets add a new variable to the top of our `index.js`:
+```
+let hasVideoBeenStarted = false
+```
+
+and change our `selfieButton` listener to start the video stream if it hasn't been started, and then take a photo otherwise. This can be done using an `if` statement that checks if we have already opened the camera like so:
+```
+selfieButton.addEventListener('click', () => {
+  if(!hasVideoBeenStarted) {
+    openCamera();
+    hasVideoBeenStarted = true;
+  } else {
+    takePicture();
+  }
+});
+```
