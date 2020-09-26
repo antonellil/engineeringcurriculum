@@ -26,6 +26,6 @@ To start:
 
 Every website has a standard format for HTML that all browsers can read. Read and copy the example template from here https://www.w3schools.com/html/html_basic.asp and paste it in your `index.html` file.
 
-There are many HTML elements, but practically only the `div` element is needed and used as the main building block for websites. Empty the contents of the `body` tag in your `index.html` and add a new empty `div` like `<div>Selfies</div>`.
+There are many HTML elements, but practically only the `div` element is needed and used as the main building block for websites. Delete the contents of the `body` tag in your `index.html` and add a new empty `div` element in your `body` like `<div>Selfies</div>`.
 
 Open your `index.html` file in Google Chrome.
