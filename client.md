@@ -43,4 +43,19 @@ If you refresh your Google Chrome you'll see that the color hasn't changed yet. 
 
 Next, lets add our first interaction to the page using JavaScript. We need to link our `index.js` to our `index.html`. To do that, add a tag `<script src="index.js"></script>` right before you close the `</body`. This tells the `index.html` page to load your `index.js` javascript file.
 
-Let's add a `button` element after your Selfies `div` like `<button>Take a selfie</button>`. Then let's make your javascript do something when the button is pressed. In your `index.js` file, you can tell it to find the `button` you just added in the html. Add an `id` attribute to your button and like `<button id="butts">Take a selfie</button>`. `id` is an attribute that is used to uniquely identify elements on the page.
+Let's add a `button` element after your Selfies `div` like `<button>Take a selfie</button>`. Then let's make your JavaScript do something when the button is pressed. In your `index.js` file, you can tell it to find the `button` you just added in the html. First add an `id` attribute to your button and like `<button id="butts">Take a selfie</button>`. The `id` attribute is an attribute that is used to uniquely identify elements on the page.
+
+In your `index.js` file you can create a variable that stores the button that we can use. Try adding the below to your `index.js` file:
+```
+const selfieButton = document.getElementById('butts');
+```
+This will create a `selfieButton` variable from the element with your `id='butts'`.
+
+Now we can tell the `selfieButton` to do something when it is clicked. This is done by adding what JavaScript calls "listeners" which are functions that get called when certain "events" happen to elements in the html. There is an event called `onclick` that we can use to tell the button to do something when a click happens to it. You can add a listener to the button with
+```
+selfieButton.addEventListener('onclick', () => {
+  alert('I was smashed');
+});
+```
+
+If you refresh your page in Google Chrome and press the button, you should see an alert message pop up. You can close the alert and click the button and see it again.
